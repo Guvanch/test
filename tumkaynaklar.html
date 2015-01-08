@@ -1,0 +1,75 @@
+<html>
+  <head>  
+   <title>Page Title</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+   </head><body> 
+
+    <style>
+h1 {
+    border-bottom: 3px solid #32eff7;
+    color: #2229e2;
+    font-size: 30px;
+}
+table, th , td  {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table tr:nth-child(odd)	{
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+</style>
+    
+    
+    
+    
+     <a href="index1.html" data-icon="home"  data-transition="flip" class="ui-btn ui-corner-all" >Home</a>
+    
+    
+  
+
+    <h1>Katalog Kaydı</h1>
+<div id="id02"></div>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "kaynakveri.php";
+
+xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        myFunction(xmlhttp.responseText);
+    }
+}
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(response) {
+    var arr = JSON.parse(response);
+    var i;
+    var out = "<table>";
+
+    for(i = 0; i < arr.length; i++) {
+        out += "<tr><td>" + 
+        arr[i].isim +
+        "</td><td>" +
+        arr[i].yazar +
+        "</td><td>" +
+        arr[i].yernumara +
+        "</td></tr>";
+    }
+    out += "</table>"
+    document.getElementById("id02").innerHTML = out;
+}
+</script>  
+        
+    </body>
+
+</html>

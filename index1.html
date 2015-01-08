@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>katalog</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+    
+    
+    <body>
+        
+        
+        
+  
+      
+        
+        
+        
+        
+              
+        
+        
+        
+        
+        
+    <div data-role="page" class="jqm-demos" id="panel-fixed-page1" data-title="Anasayfa" data-url="panel-fixed-page1">
+    <div data-role="header" data-position="fixed">
+        <h1>Katalog Tarama</h1>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+       
+    </div><!-- /header -->
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+        
+        
+         <div align="center">
+	      <!-- Dropdown menu to prepend the selected value below to the user's search term -->
+			<select onChange="#" size="1" name="search_prefix">
+				<option value="" selected="selected">Anahtar Kelime</option>
+				<option value="TI ">Başlık</option>
+	            <option value="AU ">Yazar</option>
+	        </select>
+			<!-- search box and submit button -->
+	<form class="ui-filterable">
+    <input id="inset-autocomplete-input" data-type="search" placeholder="Kaynak ara...">
+</form>
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input">
+    <li><a href=lesmis.html>Les miserables</a></li>
+    <li><a href=java.html>Java</a></li>
+    <li><a href=javaprogram.html>Java programming</a></li>
+    <li><a href=computer.html>Computer sciene</a></li>
+    <li><a href=biyokimya.html>Biyokimya</a></li>
+    <li><a href=physics.html>Physics</a></li>
+    <li><a href=matematicth.html>Mathematics</a></li>
+    <li><a href=programing.html>Programming languages</a></li>
+    <li><a href=mechanics.html>Mechanics of materials</a></li>
+    <li><a href=etik.html>Etik ve Kütüphanecilik</a></li>
+    <li><a href=lesmis.html>Victor Hugo</a></li>
+    <li><a href=java.html>Java Grup</a></li>
+    <li><a href=javaprogram.html>Sarang P.G.</a></li>
+    <li><a href=computer.html>French C.S.</a></li>
+    <li><a href=biyokimya.html>Figen Gürdol</a></li>
+    <li><a href=physics.html>Marcelo Alonso</a></li>
+    <li><a href=matematicth.html>David Bergamini</a></li>
+    <li><a href=programing.html>Allen Tucker</a></li>
+    <li><a href=mechanics.html>Ferdinand Pierre Beer</a></li>
+    <li><a href=etik.html>Murat Yılmaz</a></li>
+   
+</ul>       <input  class="ara_but"  value="Ara" type="submit">
+	       <br>
+       
+		</div>
+
+        
+      <a href="tumkaynaklar.html"data-transition="flow" class="ui-btn">Tüm Kaynaklar</a>
+
+         
+        
+        </div> 
+        
+    <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Pencereyi kapat</a></li>
+                <li><a href="odunch.html">Ödünç Verme hizmeti</a></li>
+                <li><a href="plan.html">Stratejik Plan</a></li>
+               
+        </ul>
+    </div><!-- /panel -->
+   
+</div>
+    
+    
+  </body>  
+    
+</html>
