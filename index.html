@@ -1,10 +1,39 @@
 <html>
-<header>
-    Changing world
-    </header>
-<body>
+<head>
     
-    bu alana içerik giirniz
-    </body>
+<script LANGUAGE="JavaScript"> 
+ 
+<!-- This script and many more are available free online at --> 
+<!-- The JavaScript Source!! http://javascript.internet.com --> 
 
+   <!-- Begin 
+function Login(){ 
+var done=0; 
+var username=document.login.username.value; 
+username=username.toLowerCase(); 
+var password=document.login.password.value; 
+password=password.toLowerCase(); 
+if (username=="KULLANICI ADI" && password=="ŞİFRESİ") { window.location="GİDİLECEK URL"; done=1; } 
+if (username=="member" && password=="password") { window.location="index.html"; done=1; } 
+if (username=="member3" && password=="password3") { window.location="index.html"; done=1; } 
+if (done==0) { alert("yanlış şifre!!!"); } 
+} 
+// End --> 
+</script> 
+   </head>
+
+ <body>
+<a href="home.html">refresh</a>
+<center> 
+<form name=login> 
+<table width=225 border=1 cellpadding=3> 
+<tr><td colspan=2><center><font size="+2"><b>Üye Girişi</b></font></center></td></tr> 
+<tr><td>Kullanıcıadı:</td><td><input type=text name=username></td></tr> 
+<tr><td>Kullanıcışifresi:</td><td><input type=text name=password></td></tr> 
+<tr><td colspan=2 align=center><input type=button value="Giriş" onClick="Login()"></td></tr> 
+</table> 
+</form> 
+</center> 
+
+</body>
 </html>
